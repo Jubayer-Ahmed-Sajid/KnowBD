@@ -7,8 +7,8 @@ const CATEGORIES = [
 ];
 
 const DIVISIONS = [
-  'Dhaka', 'Chittagong', 'Sylhet', 'Rajshahi',
-  'Khulna', 'Barisal', 'Rangpur', 'Mymensingh',
+  'Dhaka', 'Chattogram', 'Sylhet', 'Rajshahi',
+  'Khulna', 'Barishal', 'Rangpur', 'Mymensingh',
 ];
 
 export default function SearchBar({ onSearch, initialValues = {} }) {
