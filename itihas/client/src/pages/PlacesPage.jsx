@@ -7,8 +7,8 @@ import PlaceCard from '../components/places/PlaceCard';
 import SearchBar from '../components/places/SearchBar';
 
 const CATEGORIES = ['Archaeological', 'Architectural', 'Religious', 'Natural', 'Liberation War', 'Cultural', 'UNESCO'];
-const ERAS = ['Ancient', 'Medieval', 'Mughal', 'British Colonial', 'Liberation War', 'Modern'];
-const DIVISIONS = ['Dhaka', 'Chittagong', 'Sylhet', 'Rajshahi', 'Khulna', 'Barisal', 'Rangpur', 'Mymensingh'];
+const ERAS = ['Ancient (pre-1200)', 'Sultanate (1200-1576)', 'Mughal (1576-1757)', 'Colonial (1757-1947)', 'Liberation War (1971)', 'Modern Bangladesh'];
+const DIVISIONS = ['Dhaka', 'Chattogram', 'Sylhet', 'Rajshahi', 'Khulna', 'Barishal', 'Rangpur', 'Mymensingh'];
 const SORT_OPTIONS = [
   { value: 'featured', label: 'Featured' },
   { value: '-heritageScore', label: 'Heritage Score' },

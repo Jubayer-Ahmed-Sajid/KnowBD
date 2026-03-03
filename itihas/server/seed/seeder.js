@@ -717,6 +717,352 @@ const places = [
     featured: false,
     published: true,
   },
+
+  // ── 9. Shrine of Bayazid Bostami ────────────────────────────────
+  {
+    name: { en: 'Shrine of Bayazid Bostami', bn: 'বায়েজিদ বোস্তামীর মাজার' },
+    slug: 'shrine-of-bayazid-bostami',
+    subtitle: 'A revered Sufi shrine atop a hill in Chattogram',
+    description: {
+      short:
+        'Perched on a hilltop in Chattogram, the shrine of Bayazid Bostami is one of the most visited holy sites in Bangladesh.',
+      full:
+        'The Shrine of Bayazid Bostami sits atop a low hill in the Nasirabad area of Chattogram, Bangladesh\'s second-largest city. Tradition holds that the 9th-century Persian Sufi saint Abu Yazid al-Bistami (Bayazid Bostami) visited this site, although historical evidence is debated. The shrine complex includes a mosque, a three-domed mausoleum, and a large tank at the foot of the hill inhabited by freshwater black soft-shell turtles and terrapins that are regarded as sacred by visitors. Pilgrims from across the country visit the shrine year-round, making it one of the most important centres of devotion in the Chattogram region.',
+    },
+    story: [
+      {
+        chapter: 1,
+        title: 'The Legend of the Sufi Saint',
+        content:
+          'Abu Yazid Tayfur ibn Isa ibn Sorushān al-Bistāmi, known in Bengal as Bayazid Bostami, was a renowned 9th-century Persian mystic and one of the founders of the ecstatic (sukr) school of Sufism. According to local tradition, the saint travelled to the Chittagong hills during a journey through South and Southeast Asia, attracted by the spiritual energy of the landscape. Whether or not the historical Bayazid actually visited Bengal, his name became firmly attached to this hilltop site, and over the centuries a shrine grew up around the legend.',
+        year: '9th century AD',
+        era: 'Ancient (pre-1200)',
+      },
+      {
+        chapter: 2,
+        title: 'The Sacred Turtles',
+        content:
+          'At the foot of the shrine hill lies a large tank teeming with Nilssonia nigricans (black soft-shell turtles) and other freshwater terrapins. Local belief holds that these creatures are the descendants of evil jinn who were transformed into turtles by the saint\'s spiritual power. Devotees feed them offerings of bread and puffed rice, and harming the animals is considered taboo. The tank has become an attraction in its own right, drawing visitors who come both for devotion and to see the remarkably tame turtles.',
+        year: 'Medieval period',
+        era: 'Sultanate (1200-1576)',
+      },
+      {
+        chapter: 3,
+        title: 'Chattogram\'s Spiritual Landmark',
+        content:
+          'Today the shrine complex is one of the defining landmarks of Chattogram. The hilltop has been landscaped and a modern three-domed structure houses the cenotaph of the saint. Every Thursday evening (the traditional Sufi gathering night) the shrine is packed with devotees who come to offer prayers, light incense, and seek blessings. The site is also an important stop for tourists visiting Chattogram and provides sweeping views of the surrounding city and hills.',
+        year: 'Modern era',
+        era: 'Modern Bangladesh',
+      },
+    ],
+    historicalSignificance: 'Regional Heritage',
+    era: ['Ancient (pre-1200)', 'Sultanate (1200-1576)', 'Modern Bangladesh'],
+    category: 'Religious',
+    location: {
+      type: 'Point',
+      coordinates: [91.8121, 22.3622],
+      address: 'Nasirabad, Chattogram',
+      division: 'Chattogram',
+      district: 'Chattogram',
+    },
+    coverImage:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Bayazid_Bostami_Shrine_Chittagong.jpg/1280px-Bayazid_Bostami_Shrine_Chittagong.jpg',
+    images: [
+      {
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/b/b8/Bayazid_Bostami_Shrine_Chittagong.jpg/1280px-Bayazid_Bostami_Shrine_Chittagong.jpg',
+        caption: 'Shrine of Bayazid Bostami, Chattogram',
+        credit: 'Wikimedia Commons',
+      },
+    ],
+    facts: [
+      {
+        title: 'Sacred Turtles',
+        content: 'The tank at the shrine harbours endangered black soft-shell turtles believed to be transformed jinn.',
+        icon: 'turtle',
+      },
+      {
+        title: 'Hilltop Shrine',
+        content: 'The shrine sits atop one of the highest points in Chattogram city, offering panoramic views.',
+        icon: 'mountain',
+      },
+    ],
+    timeline: [
+      { year: '9th c. AD', event: 'Traditional date of Bayazid Bostami\'s visit to Chittagong' },
+      { year: 'Medieval', event: 'Shrine established; sacred turtle population grows' },
+      { year: '20th c.', event: 'Modern shrine complex and mosque constructed' },
+    ],
+    practicalInfo: {
+      openingHours: 'Open daily, 6 AM–9 PM',
+      entryFee: { local: 'Free', foreign: 'Free' },
+      bestTimeToVisit: 'Year-round; Thursday evenings for Sufi gatherings',
+      howToReach: 'CNG auto-rickshaw or bus from Chattogram city centre (~20 min). Located in Nasirabad area.',
+    },
+    heritageScore: 82,
+    tags: ['Sufi', 'shrine', 'Chattogram', 'turtles', 'pilgrimage', 'religious'],
+    featured: false,
+    published: true,
+  },
+
+  // ── 10. Shrine of Hazrat Shah Jalal ──────────────────────────────
+  {
+    name: { en: 'Shrine of Hazrat Shah Jalal', bn: 'হযরত শাহজালালের মাজার' },
+    slug: 'shrine-of-hazrat-shah-jalal',
+    subtitle: 'The greatest Muslim shrine in north-eastern Bangladesh',
+    description: {
+      short:
+        'The dargah of the 14th-century Sufi saint Hazrat Shah Jalal in Sylhet is one of the most visited pilgrimage sites in Bangladesh.',
+      full:
+        'The Shrine of Hazrat Shah Jalal (Dargah-e-Shah Jalal) in the heart of Sylhet city is the most venerated Muslim holy site in north-eastern Bangladesh. Shah Jalal al-Mujarrad (1271–1346) was a Sufi saint of Yemeni-Turkmen origin who arrived in Sylhet in 1303 with 360 companions (aulia) and is credited with bringing Islam to the Sylhet region. His mausoleum, topped by a distinctive silver dome, attracts millions of pilgrims annually. The complex includes a mosque, a tank of sacred catfish, and the relics of the saint.',
+    },
+    story: [
+      {
+        chapter: 1,
+        title: 'The Conquest of Sylhet',
+        content:
+          'In the early 14th century, the Bengal Sultanate struggled to extend its authority to the Hindu kingdom of Srihatta (Sylhet), ruled by King Gaur Govinda. After several failed military campaigns, Sultan Shamsuddin Firuz Shah of Bengal dispatched the warrior-general Syed Nasiruddin alongside the renowned Sufi saint Hazrat Shah Jalal, who came from Delhi with 360 devoted companions. According to tradition, Shah Jalal\'s spiritual powers assured the Muslim forces of victory, and Sylhet was brought under the Sultanate in 1303 AD.',
+        year: '1303 AD',
+        era: 'Sultanate (1200-1576)',
+      },
+      {
+        chapter: 2,
+        title: 'A Life of Devotion',
+        content:
+          'After the conquest, Shah Jalal chose to remain in Sylhet rather than return to Delhi. He devoted the rest of his life to prayer, teaching, and the welfare of the people. He is said to have lived simply, never marrying, and distributing everything he received to the poor. His companions (aulia) spread across the Sylhet region, establishing communities and mosques. Shah Jalal\'s reputation as a saint of extraordinary piety grew during his lifetime, and by his death in 1346 he was already venerated as the greatest Muslim holy man of Bengal.',
+        year: '1303–1346 AD',
+        era: 'Sultanate (1200-1576)',
+      },
+      {
+        chapter: 3,
+        title: 'A Living Shrine',
+        content:
+          'Today the Dargah of Shah Jalal is the spiritual heart of Sylhet. Millions of pilgrims visit every year to pray at his tomb, which lies beneath a silver-domed mausoleum surrounded by fragrant incense and devotional offerings. Within the complex, a tank houses sacred catfish (known as gajari machh) believed to have been created by the saint. The relics preserved at the dargah include a cloak said to have been given to Shah Jalal by the Prophet Muhammad in a dream. The shrine is a place of deep emotion, where faith and history are inseparable.',
+        year: '14th century–present',
+        era: 'Modern Bangladesh',
+      },
+    ],
+    historicalSignificance: 'National Heritage',
+    era: ['Sultanate (1200-1576)', 'Modern Bangladesh'],
+    category: 'Religious',
+    location: {
+      type: 'Point',
+      coordinates: [91.8687, 24.8993],
+      address: 'Dargah Mahalla, Sylhet',
+      division: 'Sylhet',
+      district: 'Sylhet',
+    },
+    coverImage:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Shah_Jalal_Dargah.jpg/1280px-Shah_Jalal_Dargah.jpg',
+    images: [
+      {
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/3/37/Shah_Jalal_Dargah.jpg/1280px-Shah_Jalal_Dargah.jpg',
+        caption: 'Shrine of Hazrat Shah Jalal, Sylhet',
+        credit: 'Wikimedia Commons',
+      },
+    ],
+    facts: [
+      {
+        title: '360 Aulia',
+        content: 'Shah Jalal arrived in Sylhet with 360 saintly companions, whose tombs are scattered across the region.',
+        icon: 'users',
+      },
+      {
+        title: 'Sacred Catfish',
+        content: 'The shrine complex contains a tank of catfish believed to have been created by Shah Jalal.',
+        icon: 'fish',
+      },
+      {
+        title: 'Sylhet International Airport',
+        content: 'The airport serving Sylhet is named Osmani International Airport, but the city itself is often called the "City of Shah Jalal."',
+        icon: 'plane',
+      },
+    ],
+    timeline: [
+      { year: '1303', event: 'Shah Jalal arrives in Sylhet; conquest of the kingdom of Gaur Govinda' },
+      { year: '1346', event: 'Death of Shah Jalal; shrine established at his tomb' },
+      { year: '16th–19th c.', event: 'Shrine expanded by successive rulers and devotees' },
+      { year: 'Present', event: 'Millions of pilgrims visit annually; major national heritage site' },
+    ],
+    practicalInfo: {
+      openingHours: 'Open daily; mosque prayers at standard times',
+      entryFee: { local: 'Free', foreign: 'Free' },
+      bestTimeToVisit: 'Year-round; special gatherings on Eid and Urs festivals',
+      howToReach: 'Rickshaw or CNG from Sylhet Railway Station (~10 min). Located in the city centre.',
+    },
+    heritageScore: 93,
+    tags: ['Sufi', 'shrine', 'Sylhet', 'Shah Jalal', 'pilgrimage', 'Sultanate', 'religious'],
+    featured: false,
+    published: true,
+  },
+
+  // ── 11. Durga Sagar ──────────────────────────────────────────────
+  {
+    name: { en: 'Durga Sagar', bn: 'দুর্গা সাগর' },
+    slug: 'durga-sagar',
+    subtitle: 'The largest pond in southern Bangladesh — a cultural oasis in Barishal',
+    description: {
+      short:
+        'Durga Sagar, near Madhabpasha in Barishal, is the largest manmade pond in southern Bangladesh, dug in the 18th century by Raj Shiv Narayan.',
+      full:
+        'Durga Sagar is an enormous manmade reservoir located about 12 kilometres from Barishal city in the village of Madhabpasha, Babuganj upazila. Excavated in the late 18th century by Shiv Narayan Roy, the Zamindar (landlord) of Madhabpasha, the pond was named after his mother Durga Devi. Covering an area of approximately 25 acres, it is the largest historical pond in the Barishal division and one of the largest in all of Bangladesh. The site is culturally significant as a centre for the annual Hindu Baruni Snan festival, and its tree-lined banks have made it a popular destination for day-trippers from Barishal.',
+    },
+    story: [
+      {
+        chapter: 1,
+        title: 'The Zamindar\'s Gift',
+        content:
+          'In the late 18th century, Shiv Narayan Roy was one of the most powerful zamindars (feudal landlords) of the Bakerganj region (modern Barishal). To provide fresh water to the local population and to honour his mother Durga Devi, he commissioned the excavation of a massive pond near his estate in Madhabpasha village. Hundreds of labourers dug for years, eventually creating a body of water so large that it was called a "sagar" (sea) — a name reserved for the grandest tanks in Bengali culture.',
+        year: 'c. 1780 AD',
+        era: 'Colonial (1757-1947)',
+      },
+      {
+        chapter: 2,
+        title: 'A Cultural Gathering Place',
+        content:
+          'Durga Sagar quickly became more than just a source of water. Every year during the Bengali month of Chaitra (March–April), thousands of Hindu devotees gather at its ghats (bathed steps) for the Baruni Snan — a ritual bathing festival believed to wash away sin. The surrounding groves of coconut, betel nut, and mango trees host fairs, markets, and cultural performances during the festival season. For the Hindu community of Barishal, Durga Sagar is inseparable from their religious and cultural identity.',
+        year: '19th century',
+        era: 'Colonial (1757-1947)',
+      },
+      {
+        chapter: 3,
+        title: 'A Heritage at Risk',
+        content:
+          'In recent decades, encroachment, pollution, and declining water levels have threatened Durga Sagar. Local activists and heritage organisations have campaigned to protect the pond and its surrounding environment. The Bangladesh Department of Archaeology has recognised it as a heritage site, and tree-planting drives have helped restore some of the green canopy. Today the pond, with its calm waters reflecting ancient trees, remains a symbol of the generosity and cultural richness of the Barishal region.',
+        year: '21st century',
+        era: 'Modern Bangladesh',
+      },
+    ],
+    historicalSignificance: 'Cultural Landmark',
+    era: ['Colonial (1757-1947)', 'Modern Bangladesh'],
+    category: 'Cultural',
+    location: {
+      type: 'Point',
+      coordinates: [90.3050, 22.6483],
+      address: 'Madhabpasha, Babuganj Upazila, Barishal',
+      division: 'Barishal',
+      district: 'Barishal',
+    },
+    coverImage:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Durga_Sagar_Barisal.jpg/1280px-Durga_Sagar_Barisal.jpg',
+    images: [
+      {
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/a/ab/Durga_Sagar_Barisal.jpg/1280px-Durga_Sagar_Barisal.jpg',
+        caption: 'Durga Sagar, Madhabpasha, Barishal',
+        credit: 'Wikimedia Commons',
+      },
+    ],
+    facts: [
+      {
+        title: 'Largest Pond in Barishal',
+        content: 'At approximately 25 acres, Durga Sagar is the largest historical pond in southern Bangladesh.',
+        icon: 'water',
+      },
+      {
+        title: 'Baruni Snan Festival',
+        content: 'Thousands of Hindu devotees gather annually for the Baruni Snan ritual bathing at the pond\'s ghats.',
+        icon: 'calendar',
+      },
+    ],
+    timeline: [
+      { year: 'c. 1780', event: 'Zamindar Shiv Narayan Roy commissions the excavation of the pond' },
+      { year: '19th c.', event: 'Becomes a major site for the annual Baruni Snan festival' },
+      { year: '2000s', event: 'Heritage conservation efforts launched to protect the site' },
+    ],
+    practicalInfo: {
+      openingHours: 'Open daily, dawn to dusk',
+      entryFee: { local: 'Free', foreign: 'Free' },
+      bestTimeToVisit: 'March–April (Baruni Snan festival) or November–February (cool season)',
+      howToReach: 'Auto-rickshaw from Barishal city (~30 min to Madhabpasha). Barishal is connected to Dhaka by launch and bus.',
+    },
+    heritageScore: 76,
+    tags: ['pond', 'cultural', 'Barishal', 'Hindu', 'festival', 'zamindar', 'heritage'],
+    featured: false,
+    published: true,
+  },
+
+  // ── 12. Shashi Lodge ─────────────────────────────────────────────
+  {
+    name: { en: 'Shashi Lodge', bn: 'শশী লজ' },
+    slug: 'shashi-lodge',
+    subtitle: 'A jewel of colonial architecture in Mymensingh',
+    description: {
+      short:
+        'Shashi Lodge is a stunning colonial-era building in Mymensingh, built in 1905 by the local zamindar Kumar Shashi Kanta Acharya Chowdhury.',
+      full:
+        'Shashi Lodge (also spelled Sashi Lodge) is a magnificent two-storey palace in Mymensingh town, on the western bank of the Brahmaputra River. It was built in 1905 by Kumar Shashi Kanta Acharya Chowdhury, one of the most prominent zamindars of the Mymensingh Raj. The building combines European Baroque and Neoclassical elements with local Bengali craftsmanship — featuring ornate cornices, Corinthian columns, decorative plasterwork, and a grand central staircase. After independence it was converted into a women\'s teacher training college and more recently has been partially opened as a heritage attraction. The lodge is considered one of the finest surviving examples of colonial-era zamindar architecture in the Mymensingh division.',
+    },
+    story: [
+      {
+        chapter: 1,
+        title: 'The Zamindars of Mymensingh',
+        content:
+          'In the 19th century, the Acharya Chowdhury family were among the most powerful zamindars of Mymensingh, which was one of the largest and wealthiest districts of Bengal. The family\'s estates stretched across vast tracts of land north of Dhaka. Eager to display their status and keep pace with the Westernised tastes of the colonial elite, the zamindars commissioned a series of grand buildings — courthouses, temples, and residences — that transformed the town of Mymensingh into a showcase of Indo-European architecture.',
+        year: '19th century',
+        era: 'Colonial (1757-1947)',
+      },
+      {
+        chapter: 2,
+        title: 'Building the Lodge',
+        content:
+          'Kumar Shashi Kanta Acharya Chowdhury commissioned the lodge in 1905, naming it after himself. The architect drew from European pattern books popular in colonial India: the façade is a riot of Corinthian pilasters, pediments, and floral plasterwork, while the interior featured marble floors, Belgian glass, and a sweeping wooden staircase. The building served as a grand residence and social venue, hosting cultural gatherings, literary evenings, and religious festivals for the zamindar\'s extended household and guests.',
+        year: '1905',
+        era: 'Colonial (1757-1947)',
+      },
+      {
+        chapter: 3,
+        title: 'From Palace to Heritage',
+        content:
+          'After the Partition of India in 1947, the Acharya Chowdhury family left for India, and the lodge was taken over by the government. It served for many years as a women\'s teacher training college. Though decades of institutional use took their toll on the ornate interiors, the essential structure and façade survived remarkably well. In recent years, growing awareness of Mymensingh\'s architectural heritage has led to conservation discussions and the building has attracted increasing numbers of heritage-conscious visitors. Shashi Lodge is now recognised as one of the most beautiful colonial-era buildings in northern Bangladesh.',
+        year: '1947–present',
+        era: 'Modern Bangladesh',
+      },
+    ],
+    historicalSignificance: 'Regional Heritage',
+    era: ['Colonial (1757-1947)', 'Modern Bangladesh'],
+    category: 'Architectural',
+    location: {
+      type: 'Point',
+      coordinates: [90.4007, 24.7539],
+      address: 'Mymensingh town, on the bank of the Brahmaputra',
+      division: 'Mymensingh',
+      district: 'Mymensingh',
+    },
+    coverImage:
+      'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shashi_Lodge_Mymensingh.jpg/1280px-Shashi_Lodge_Mymensingh.jpg',
+    images: [
+      {
+        url: 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/dc/Shashi_Lodge_Mymensingh.jpg/1280px-Shashi_Lodge_Mymensingh.jpg',
+        caption: 'Shashi Lodge, Mymensingh',
+        credit: 'Wikimedia Commons',
+      },
+    ],
+    facts: [
+      {
+        title: 'Corinthian Columns',
+        content: 'The lodge\'s façade features elaborate Corinthian columns and European-style plasterwork, rare in northern Bangladesh.',
+        icon: 'building',
+      },
+      {
+        title: 'Zamindar Heritage',
+        content: 'Mymensingh was home to some of Bengal\'s wealthiest zamindars; Shashi Lodge is one of their finest surviving residences.',
+        icon: 'crown',
+      },
+    ],
+    timeline: [
+      { year: '1905', event: 'Shashi Lodge built by Kumar Shashi Kanta Acharya Chowdhury' },
+      { year: '1947', event: 'Zamindar family leaves after Partition; lodge taken over by the government' },
+      { year: '2000s', event: 'Heritage awareness grows; conservation discussions begin' },
+    ],
+    practicalInfo: {
+      openingHours: 'Exterior viewable daily; interior access may require permission',
+      entryFee: { local: 'Free', foreign: 'Free' },
+      bestTimeToVisit: 'November to February',
+      howToReach: 'Rickshaw from Mymensingh Railway Station (~10 min). Mymensingh is ~2.5 hours from Dhaka by train.',
+    },
+    heritageScore: 78,
+    tags: ['colonial', 'zamindar', 'Mymensingh', 'architecture', 'palace', 'Brahmaputra'],
+    featured: false,
+    published: true,
+  },
 ];
 
 // ─── Seeder function ─────────────────────────────────────────────
