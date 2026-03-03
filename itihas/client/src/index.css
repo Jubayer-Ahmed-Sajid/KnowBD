@@ -1,0 +1,51 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---- Base resets ---- */
+@layer base {
+  html {
+    scroll-behavior: smooth;
+  }
+
+  body {
+    @apply font-body text-heritage-dark bg-heritage-cream;
+  }
+
+  h1, h2, h3, h4, h5, h6 {
+    @apply font-heading;
+  }
+
+  /* Bengali text helper */
+  .bn {
+    @apply font-bengali;
+  }
+}
+
+/* ---- Component helpers ---- */
+@layer components {
+  .btn-primary {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg
+           bg-heritage-green text-white font-semibold
+           hover:bg-heritage-green/90 transition-colors duration-200;
+  }
+
+  .btn-gold {
+    @apply inline-flex items-center justify-center px-6 py-3 rounded-lg
+           bg-heritage-gold text-white font-semibold
+           hover:bg-heritage-gold/90 transition-colors duration-200;
+  }
+
+  .section-padding {
+    @apply px-4 py-16 md:px-8 lg:px-16 xl:px-24;
+  }
+
+  .container-narrow {
+    @apply max-w-5xl mx-auto;
+  }
+}
+
+/* ---- Leaflet overrides ---- */
+.leaflet-container {
+  z-index: 0;
+}
