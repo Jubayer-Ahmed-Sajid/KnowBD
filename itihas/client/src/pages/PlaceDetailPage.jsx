@@ -93,8 +93,9 @@ export default function PlaceDetailPage() {
     );
   }
 
+  // GeoJSON coordinates are stored as [longitude, latitude]
   const coords = place.location?.coordinates;
-  const hasMap = coords?.lat != null && coords?.lng != null;
+  const hasMap = Array.isArray(coords) && coords.length === 2;
 
   return (
     <>
@@ -323,13 +324,13 @@ export default function PlaceDetailPage() {
                 <h2 className="text-xl font-heading font-semibold mb-4">Location</h2>
                 <div className="rounded-xl overflow-hidden border border-heritage-cream h-64">
                   <MapContainer
-                    center={[coords.lat, coords.lng]}
+                    center={[coords[1], coords[0]]}
                     zoom={13}
                     style={{ height: '100%', width: '100%' }}
                     scrollWheelZoom={false}
                   >
                     <TileLayer url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png" />
-                    <Marker position={[coords.lat, coords.lng]} icon={defaultIcon}>
+                    <Marker position={[coords[1], coords[0]]} icon={defaultIcon}>
                       <Popup>
                         <strong>{place.name?.en}</strong>
                         {place.location?.address && <><br />{place.location.address}</>}

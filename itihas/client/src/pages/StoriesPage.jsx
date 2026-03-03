@@ -16,7 +16,10 @@ function StoryForm({ onSubmit, onClose, places }) {
 
   const handleSubmit = async (e) => {
     e.preventDefault();
-    if (!title.trim() || !content.trim()) { toast.error('Please fill all fields'); return; }
+    if (!title.trim() || !content.trim()) {
+      toast.error('Please fill all fields');
+      return;
+    }
     setLoading(true);
     try {
       await storiesAPI.create({ title, content, place: placeId || undefined });

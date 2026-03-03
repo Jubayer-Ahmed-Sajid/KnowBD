@@ -56,7 +56,7 @@ export default function MapPage() {
   };
 
   const validPlaces = filtered.filter(
-    (p) => p.location?.coordinates?.lat != null && p.location?.coordinates?.lng != null
+    (p) => Array.isArray(p.location?.coordinates) && p.location.coordinates.length === 2
   );
 
   return (
@@ -145,7 +145,7 @@ export default function MapPage() {
               {validPlaces.map((place) => (
                 <Marker
                   key={place._id}
-                  position={[place.location.coordinates.lat, place.location.coordinates.lng]}
+                  position={[place.location.coordinates[1], place.location.coordinates[0]]}
                   icon={createMarkerIcon(place.category)}
                 >
                   <Popup maxWidth={220}>
