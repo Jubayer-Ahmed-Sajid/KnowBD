@@ -49,7 +49,7 @@ exports.register = asyncHandler(async (req, res, next) => {
     success: true,
     message: 'Account created successfully',
     token,
-    data: sanitiseUser(user),
+    user: sanitiseUser(user),
   });
 });
 
@@ -88,7 +88,7 @@ exports.login = asyncHandler(async (req, res, next) => {
     success: true,
     message: 'Logged in successfully',
     token,
-    data: sanitiseUser(user),
+    user: sanitiseUser(user),
   });
 });
 

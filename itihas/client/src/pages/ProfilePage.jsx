@@ -43,7 +43,7 @@ export default function ProfilePage() {
       updateUser(data?.data || { ...user, name, bio });
       toast.success('Profile updated!');
     } catch (err) {
-      toast.error(err.response?.data?.message || 'Failed to update profile');
+      toast.error(err.response?.data?.message || err.response?.data?.error || 'Failed to update profile');
     } finally {
       setSavingProfile(false);
     }
@@ -58,7 +58,7 @@ export default function ProfilePage() {
       toast.success('Password updated!');
       setCurrentPassword(''); setNewPassword('');
     } catch (err) {
-      toast.error(err.response?.data?.message || 'Failed to update password');
+      toast.error(err.response?.data?.message || err.response?.data?.error || 'Failed to update password');
     } finally {
       setSavingPassword(false);
     }

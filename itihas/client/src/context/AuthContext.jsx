@@ -25,7 +25,7 @@ export function AuthProvider({ children }) {
       toast.success('Welcome back!');
       return { success: true };
     } catch (err) {
-      const msg = err.response?.data?.message || 'Login failed';
+      const msg = err.response?.data?.message || err.response?.data?.error || err.response?.data?.errors?.[0]?.message || 'Login failed';
       toast.error(msg);
       return { success: false, error: msg };
     } finally {
@@ -43,7 +43,7 @@ export function AuthProvider({ children }) {
       toast.success('Account created successfully!');
       return { success: true };
     } catch (err) {
-      const msg = err.response?.data?.message || 'Registration failed';
+      const msg = err.response?.data?.message || err.response?.data?.error || err.response?.data?.errors?.[0]?.message || 'Registration failed';
       toast.error(msg);
       return { success: false, error: msg };
     } finally {
